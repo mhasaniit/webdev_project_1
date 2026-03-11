@@ -116,15 +116,16 @@ nav {
 .thick-border {
   border-bottom: 5px solid #1a2a6c;
   margin-bottom: 2.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 2.5rem; 
+  overflow: auto; 
 }
 
 .resume-float-img {
   width: 220px;
   float: right;
-  margin: -1rem 0 4rem 2rem; 
+  margin-left: 2rem;
+  margin-bottom: 1rem; 
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .job-block {
