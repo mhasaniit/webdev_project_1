@@ -1,66 +1,112 @@
 body {
-  font-family: 'Montserrat', sans-serif; 
-  background-color: #f0f2f5;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f4f7f9;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.8;
 }
-h1, h2 {
-  font-family: "Trebuchet MS", sans-serif;
-  text-align: center;
+
+h1, h2, h3 {
+  font-family: Arial, Helvetica, sans-serif;
   color: #1a2a6c;
+  margin-bottom: 1rem;
 }
+
+
 nav {
   background-color: #1a2a6c;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 }
+
 .nav-links {
-  list-style: none; 
+  list-style: none;
   display: flex;
   justify-content: center;
   margin: 0;
   padding: 0;
 }
+
 .nav-links li {
-  margin: 0 2rem;
+  margin: 0 1.5rem;
 }
+
 .nav-links a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
-  text-transform: uppercase;
+  font-size: 1.1rem;
 }
+
 .main-container {
-  width: 90%; 
+  width: 90%;
   max-width: 1100px;
   margin: 2rem auto;
   padding: 1rem;
 }
-.intro-card {
-  display: flex;
-  flex-wrap: wrap; 
-  background: white;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  gap: 2rem;
-  align-items: center;
+
+.page-title {
+  text-align: center;
+  margin-bottom: 2rem;
 }
-.intro-card img {
-  width: 100%;
-  max-width: 250px;
-  height: auto;
-  border: 4px solid #b21f1f;
-  border-radius: 8px;
-}
-.prediction {
+
+.subtitle {
+  font-size: 1.2rem;
   color: #b21f1f;
   font-weight: bold;
-  font-style: italic;
 }
+
+.image-wrapper {
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 2rem;
+}
+
+.image-wrapper img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 20px;
+  border: 6px solid #1a2a6c;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* CONTENT GRID */
+.bio-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem auto;
+}
+
+.info-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.info-card {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 2rem;
+  border-top: 5px solid #b21f1f;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.prediction {
+  color: #b21f1f;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.video-container {
+  text-align: center;
+}
+
 video {
   width: 100%;
-  max-width: 700px;
-  display: block;
-  margin: 2rem auto;
-  border: 2px solid #ccc;
+  max-width: 750px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
