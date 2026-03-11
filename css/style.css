@@ -122,7 +122,8 @@ nav {
 .resume-float-img {
   width: 220px;
   float: right;
-  margin: 0 0 1.5rem 1.5rem;
+  margin: 0 0 1.5rem 1.5rem; 
+  margin-bottom: 2.5rem; 
   border-radius: 10px;
 }
 
