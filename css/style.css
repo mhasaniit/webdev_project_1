@@ -122,9 +122,9 @@ nav {
 .resume-float-img {
   width: 220px;
   float: right;
-  margin: 0 0 1.5rem 1.5rem; 
-  margin-bottom: 2.5rem; 
+  margin: -1rem 0 4rem 2rem; 
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .job-block {
