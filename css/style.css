@@ -1,56 +1,67 @@
+/* Project Two: Final Unified Stylesheet
+   Indentation: 2 Spaces 
+*/
+
+/* --- GLOBAL STYLES --- */
 body {
-  font-family: 'Montserrat', sans-serif; 
+  font-family: 'Montserrat', sans-serif;
   background: #f0f4f8;
   color: #2d3436;
   line-height: 1.8;
   margin: 0;
   padding: 0;
 }
+
 h1, h2, h3 {
-  font-family: Arial, Helvetica, sans-serif; 
+  font-family: Arial, Helvetica, sans-serif;
   color: #1a2a6c;
   margin-bottom: 1rem;
 }
-p {
-  margin-bottom: 1rem;
-}
+
+/* --- NAVIGATION --- */
 nav {
   background-color: #1a2a6c;
   padding: 1.5rem 0;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
 .nav-links {
-  list-style: none; 
+  list-style: none;
   display: flex;
   justify-content: center;
   gap: 3rem;
   margin: 0;
   padding: 0;
 }
+
 .nav-links a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: color 0.3s ease;
 }
+
 .nav-links a:hover {
-  color: #ff7675; 
+  color: #ff7675;
 }
+
+/* --- LAYOUTS --- */
 .main-container {
-  width: 90%; 
+  width: 90%;
   max-width: 1100px;
   margin: 3rem auto;
 }
+
 .fixed-container {
-  width: 850px; 
+  width: 850px;
   margin: 3rem auto;
   background: #ffffff;
   padding: 4rem;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
+
+/* --- COMPONENTS --- */
 .hero {
   text-align: center;
   padding: 3rem;
@@ -59,63 +70,107 @@ nav {
   margin-bottom: 2rem;
   border-top: 10px solid #1a2a6c;
 }
+
 .hero-image-container {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   margin-bottom: 2rem;
 }
+
 .profile-img {
   width: 100%;
   max-width: 320px;
-  border-radius: 50%; 
+  border-radius: 50%;
   border: 8px solid #1a2a6c;
-  transition: transform 0.4s ease;
 }
-.profile-img:hover {
-  transform: scale(1.05) rotate(2deg);
+
+.bio-card {
+  background: #fff;
+  padding: 3rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
 }
+
+.info-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.mini-card {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.tech-focus {
+  border-left: 10px solid #1a2a6c;
+  background: #f8fbff;
+}
+
+/* --- RESUME ELEMENTS --- */
+.resume-header-box {
+  text-align: center;
+  border: 6px solid #1a2a6c;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.thick-border {
+  border-bottom: 5px solid #1a2a6c;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.resume-float-img {
+  width: 200px;
+  float: right;
+  margin: 0 0 1rem 1rem;
+  border-radius: 10px;
+}
+
+.job-meta {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+/* --- PROJECT CARDS --- */
+.project-card {
+  background: white;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  border-radius: 15px;
+  border-left: 10px solid #ff7675;
+}
+
+.bullet-list {
+  padding-left: 1.5rem;
+}
+
+/* --- SHARED DECORATION --- */
 .prediction-text {
   display: inline-block;
   background: #ff7675;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  font-weight: bold;
+  margin-top: 1rem;
 }
-.resume-float-img {
-  width: 200px;
-  float: right; 
-  margin: 0 0 1.5rem 1.5rem;
-  border-radius: 10px;
+
+.video-section {
+  text-align: center;
+  background: #1a2a6c;
+  color: #fff;
+  padding: 3rem;
+  border-radius: 20px;
+  margin-top: 2rem;
 }
-.job-block {
-  margin-bottom: 2.5rem;
-  border-bottom: 1px dashed #cbd5e0;
-  padding-bottom: 1.5rem;
-}
-.job-meta {
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-  color: #1a2a6c;
-  margin-bottom: 0.5rem;
-}
-.project-card {
-  background: white;
-  padding: 2.5rem;
-  margin-bottom: 2rem;
-  border-radius: 15px;
-  border-left: 10px solid #ff7675; 
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-}
-.bullet-list {
-  list-style: square;
-  padding-left: 2rem;
-}
+
 video {
   width: 100%;
   max-width: 800px;
   border-radius: 15px;
-  display: block;
-  margin: 2rem auto;
 }
