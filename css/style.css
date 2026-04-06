@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   background: #f0f4f8;
   color: #2d3436;
   line-height: 1.8;
@@ -19,6 +19,9 @@ nav {
   background-color: #1a2a6c;
   padding: 1.5rem 0;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .nav-links {
   list-style: none;
@@ -58,6 +61,7 @@ nav {
   border-radius: 20px;
   margin-bottom: 2rem;
   border-top: 10px solid #1a2a6c;
+  position: relative;
 }
 .hero-image-container {
   display: flex;
@@ -88,6 +92,7 @@ nav {
   padding: 2.5rem;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  float: left;
 }
 .tech-focus,
 .hobby-border {
@@ -135,6 +140,7 @@ nav {
   padding-left: 2rem;
   list-style-type: square;
 }
+
 .bullet-list li {
   margin-bottom: 0.5rem;
 }
@@ -154,6 +160,7 @@ nav {
   padding: 3rem;
   border-radius: 20px;
   margin-top: 2rem;
+  position: relative;
 }
 .video-section h2 {
   color: #fff; 
