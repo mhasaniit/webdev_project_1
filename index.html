@@ -1,34 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>About Me</title>
-  </head>
-  <body>
-    <ul>
-      <li><a href="index.html">index.html</a></li>
-      <li><a href="resume.html">resume.html</a></li>
-      <li><a href="projects.html">projects.html</a></li>
+<head>
+  <meta charset="utf-8">
+  <title>Mustafa Hasan | About Me</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="projects.html">Projects</a></li>
     </ul>
-    <h1>About Me</h1>
-    <section>
-      <img src="media/me1.jpg"
-           alt="Portrait of Mustafa Hasan, cybersecurity and information technology student at Illinois Institute of Technology">
-      <p>
-        Hello! My name is Mustafa Hasan. I am a Cybersecurity and ITM student
-        passionate about programming, robotics, and data analysis. My hobbies
-        include playing sports such as basketball and cricket.
-      </p>
-      <p>
-        Fun Fact: I believe India will win the T20 World Cup 2026.
-      </p>
-    </section>
-    <section>
-      <h2>My Cricket Highlights</h2>
-      <video controls>
-        <source src="media/cricket1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </section>
-  </body>
+  </nav>
+  <div class="main-container">
+    <main>
+      <section class="hero">
+        <div class="hero-image-container">
+          <img src="media/me1.jpg" alt="Mustafa Hasan Portrait" class="profile-img">
+        </div>
+        <h1>Mustafa Hasan</h1>
+        <p class="hero-subtitle">Future Cybersecurity & IT Operations Leader</p>
+      </section>
+      <section class="bio-card">
+        <h2>About Me</h2>
+        <p>
+          I am a Cybersecurity and ITM student at <strong>Illinois Institute of Technology</strong>. My passion with technology goes beyond just using it; I want to understand how to defend it. I am deeply interested in <strong>Cybersecurity</strong>—specifically network defense and ethical hacking—and how <strong>IT Operations</strong> keep the world's digital infrastructure running smoothly.
+        </p>
+        <p>
+          Whether it’s optimizing a robotics system or securing a database, I thrive on the "behind-the-scenes" technical work that ensures reliability and safety in modern tech environments.
+        </p>
+      </section>
+     <div class="info-row">
+        <section class="mini-card tech-focus">
+          <h3>Technical Focus</h3>
+          <ul class="bullet-list">
+            <li><strong>Cybersecurity:</strong> Network Defense & Ethical Hacking</li>
+            <li><strong>IT Operations:</strong> System Reliability & Infrastructure</li>
+            <li><strong>Automation:</strong> Robotics & Programming Logic</li>
+          </ul>
+        </section>
+        <section class="mini-card hobby-border">
+          <h3>My Hobbies</h3>
+          <p>When I'm not securing networks, I'm dominating the court or the pitch! I love playing basketball and cricket.</p>
+          <div class="prediction-text">India has won the T20 World Cup 2026! 🏆</div>
+        </section>
+      </div>
+      <section class="video-section">
+        <h2>Watch Me In Action!</h2> 
+        <video controls>
+          <source src="media/cricket1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </section>
+    </main>
+  </div>
+</body>
 </html>

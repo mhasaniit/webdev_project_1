@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Projects</title>
-  </head>
-  <body>
-    <ul>
-      <li><a href="index.html">index.html</a></li>
-      <li><a href="resume.html">resume.html</a></li>
-      <li><a href="projects.html">projects.html</a></li>
+<head>
+  <meta charset="utf-8">
+  <title>Projects | Mustafa Hasan</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="projects.html">Projects</a></li>
     </ul>
-    <h1>Projects</h1>
-    <section>
-      <img src="media/car.jpg"
-           alt="Osoyoo line-following robot car built and programmed in C++ for a robotics competition">
-      <h2>Shape Analysis Tool – Python</h2>
-      <p>Illinois Institute of Technology</p>
-      <p>December 2025</p>
-      <ul>
-        <li>
-          Created a program to generate random shapes and calculate areas and
-          surface areas.
-        </li>
-        <li>
-          Displayed results through terminal output, file storage, and graphical
-          user interface options.
-        </li>
+  </nav>
+  <div class="main-container">
+    <h1 style="text-align: center; margin-bottom: 3rem;">Technical Projects</h1>
+    <article class="project-card">
+      <img src="media/car.jpg" alt="Osoyoo robot" style="width: 250px; border-radius: 10px; float: left; margin-right: 2rem;">
+      <h2>Osoyoo Line-Following Robot – C++</h2>
+      <p><em>October 2024</em></p>
+      <ul class="bullet-list">
+        <li>Built and optimized a line-following robot capable of accurate navigation. Used Arduino Uno, sensors, motor pins, to demonstrate logic.</li>
+        <li>Achieved 97% success rate and the fastest competition time of 30 seconds.</li>
       </ul>
+      <div style="clear: both;"></div>
+    </article>
+    <article class="project-card">
+      <h2>Java-Based Streaming System</h2>
+      <p><em>April 2025</em></p>
+      <ul class="bullet-list">
+        <li>Developed a platform supporting personalized playlists and user management.</li>
+        <li>Implemented file imports and playback tracking for account-based features. Leveraged Object Orientated programming.</li>
+      </ul>
+    </article>
+    <article class="project-card">
+      <h2>Shape Analysis Tool – Python</h2>
+      <p><em>December 2025</em></p>
+      <ul class="bullet-list">
+        <li>Created a program to generate shapes and calculate geometric properties.</li>
+        <li>Displayed results via terminal output and graphical user interface (GUI).</li>
     </section>
     <section>
       <h2>Java-Based Streaming System – Java</h2>
@@ -55,8 +69,10 @@
           of thirty seconds.
         </li>
       </ul>
-    </section>
-  </body>
+    </article>
+  </div>
+</body>
 </html>
+
 
 
