@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// IMAGE SLIDER
 const images = [
   "media/me1.jpg",
   "media/car.jpg",
@@ -33,6 +34,27 @@ function prevImage() {
   showImage();
 }
 
+// Auto slide every 4 seconds (safe if slider not on page)
 setInterval(() => {
-  nextImage();
+  const slider = document.getElementById("slider-image");
+  if (slider) {
+    nextImage();
+  }
 }, 4000);
+
+function changeLocation(place) {
+  const mapFrame = document.getElementById("map-frame");
+
+  
+  if (!mapFrame) return;
+
+  if (place === "iit") {
+    mapFrame.src = "https://www.google.com/maps?q=Illinois+Institute+of+Technology&output=embed";
+  } 
+  else if (place === "downtown") {
+    mapFrame.src = "https://www.google.com/maps?q=Downtown+Chicago&output=embed";
+  } 
+  else if (place === "home") {
+    mapFrame.src = "https://www.google.com/maps?q=Chicago+Illinois&output=embed";
+  }
+}
