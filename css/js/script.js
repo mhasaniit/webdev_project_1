@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const images = [
   "media/me1.jpg",
   "media/m.jpg",
-  "media/oy.jpeg"
+  "media/oy.jpg"
 ];
 
 let currentIndex = 0;
