@@ -36,10 +36,12 @@
 
     .map-buttons {
       margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
     }
 
     .map-buttons button {
-      margin: 0.5rem;
       padding: 0.6rem 1.2rem;
       border: none;
       border-radius: 8px;
@@ -47,11 +49,13 @@
       color: white;
       cursor: pointer;
       font-weight: bold;
-      transition: background 0.3s ease;
+      font-family: 'Montserrat', sans-serif;
+      transition: background 0.3s ease, transform 0.2s;
     }
 
     .map-buttons button:hover {
       background: #ff7675;
+      transform: translateY(-2px);
     }
   </style>
 </head>
@@ -74,7 +78,7 @@
       <div id="map-container">
         <iframe 
           id="map-frame" 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2972.100984857416!2d-87.6293699233857!3d41.83689436814041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c695843468b%3A0x7d06e23b030438!2sIllinois%20Institute%20of%20Technology!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus" 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2972.333830784227!2d-87.6294711!3d41.8347062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c694a5e3f31%3A0xc3b836c968270591!2sIllinois%20Institute%20of%20Technology!5e0!3m2!1sen!2sus!4v1710000000000" 
           allowfullscreen="" 
           loading="lazy">
         </iframe>
